@@ -1,0 +1,159 @@
+/* Universal */
+:root {
+    --primary-color: #131313;
+    --secondar-color: #727272;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 25px 120px;
+    width: 100%;
+    max-width: 1460px;
+}
+.first{
+    background: rgba(255, 144, 14, 0.1);
+    margin-bottom: 20px;
+}
+.header {
+    color: var(--primary-color);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.header-des {
+    color: var(--secondar-color);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+}
+
+/* Navbar starts here */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/* banner section */
+.banner {
+    margin-top: 70px;
+    text-align: center;
+    justify-content: center;
+    padding: 0px 22rem;
+}
+
+/* Button */
+.btn {
+    width: 120px;
+    height: 34px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin: 20px 0;
+}
+.pic img{
+    width: 100%;
+}
+/* Grid and text section */
+.second{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.text h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+/* Architect and text */
+.third{
+   display: flex;
+   align-items: center;
+}
+.left-side{
+    align-items: center;
+    margin: 0 50px 10px 0;
+    width: 50%;
+}
+.human{
+    width: 50%;
+}
+.human img{
+    width: 100%;
+}
+.info .text-bars{
+    box-shadow: 5px 5px 5px lightgrey;
+    margin: 30px 50px 10px 0;
+    padding: 10px 25px;
+}
+.btn1{
+    width: 100px;
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    display: block;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        padding: 0;
+    }
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .banner {
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .second{
+       flex-direction: column;
+    }
+    .grids{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grids img{
+        width: 100%;
+    }
+    .text{
+        text-align: center;
+    }
+    /* ............................ */
+    .third{
+        flex-direction: column;
+     }
+     .left-side{
+        text-align: center;
+        width: 100%;
+        margin: 10px;
+     }
+     .human{
+         width: 80%;
+     }
+     .human .last-btn{
+        display: flex;
+        justify-content: center;
+    }
+     .info .text-bars{
+         width: 100%;
+     }
+}
