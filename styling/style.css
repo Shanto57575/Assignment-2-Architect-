@@ -1,24 +1,26 @@
 /* Universal */
 :root {
     --primary-color: #131313;
-    --secondar-color: #727272;
+    --secondary-color: #727272;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
+.container{
     padding: 25px 120px;
     width: 100%;
     max-width: 1460px;
 }
+
 .first{
-    background: rgba(255, 144, 14, 0.1);
+    background-color: rgba(255, 144, 14, 0.1);
     margin-bottom: 20px;
 }
+
 .header {
     color: var(--primary-color);
     font-size: 35px;
@@ -26,7 +28,7 @@
 }
 
 .header-des {
-    color: var(--secondar-color);
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 16px;
     margin: 10px 0 10px 0;
@@ -63,47 +65,57 @@ ul {
     border: none;
     margin: 20px 0;
 }
-.pic img{
+
+.pic img {
     width: 100%;
 }
+
 /* Grid and text section */
-.second{
+.second {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.grids{
+
+.grids {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
     row-gap: 10px;
 }
-.text h2{
+
+.text h2 {
     font-size: 35px;
     margin-bottom: 20px;
 }
+
 /* Architect and text */
-.third{
-   display: flex;
-   align-items: center;
+.third {
+    display: flex;
+    align-items: center;
 }
-.left-side{
+
+.left-side {
     align-items: center;
     margin: 0 50px 10px 0;
     width: 50%;
 }
-.human{
+
+.human {
     width: 50%;
 }
-.human img{
+
+.human img {
     width: 100%;
 }
-.info .text-bars{
+
+.info .text-bars {
     box-shadow: 5px 5px 5px lightgrey;
     margin: 30px 50px 10px 0;
     padding: 10px 25px;
 }
-.btn1{
+
+.btn1 {
     width: 100px;
     height: 64px;
     background: #FF900E;
@@ -113,47 +125,160 @@ ul {
     display: block;
 }
 
+/* Text and bordered button */
+.text1 {
+    margin-top: 50px;
+    width: 40%;
+}
+.fourth{
+    margin-bottom: 80px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 25px;
+}
+
+.box-info {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 13px 25px;
+    transition: transform 0.5s;
+    text-align: center;
+}
+.box-info:hover{
+    background-color: rgb(219, 196, 243);
+    border-radius: 50%;
+    transform:rotate(360deg);
+    font-weight: 700;
+    font-size: 30px;
+}
+/* fifth section*/
+.fifth{
+    text-align: center;
+}
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    filter: grayscale(1);
+}
+
+/* Extra Section */
+.extra-sections{
+    margin: 50px 0;
+    text-align: center;
+}
+.extra{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.extra img{
+   width: 280px;
+   max-width: 1200px;
+   height: 200px;
+   border-radius: 8px;
+   transition: transform 0.5s;
+}
+.extra img:hover{
+    width: 280px;
+    max-width: 1200px;
+    height: 200px;
+    border-radius: 8px;
+    transform:rotate(360deg);
+ }
+/* Footer */
+.footer{
+    margin: 100px;
+    background: rgba(255, 144, 14, 0.1);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Media Query */
 @media screen and (max-width:576px) {
     .container {
         padding: 0;
     }
+
     nav {
         flex-direction: column;
         padding: 10px;
     }
+
     .banner {
         width: 100%;
         padding: 10px 20px;
     }
-    .second{
-       flex-direction: column;
+
+    .second {
+        flex-direction: column;
     }
-    .grids{
-        grid-template-columns: repeat(1,1fr);
+
+    .grids {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .grids img{
+
+    .grids img {
         width: 100%;
     }
-    .text{
+
+    .text {
         text-align: center;
     }
+
     /* ............................ */
-    .third{
+    .third {
         flex-direction: column;
-     }
-     .left-side{
+    }
+
+    .left-side {
         text-align: center;
         width: 100%;
         margin: 10px;
-     }
-     .human{
-         width: 80%;
-     }
-     .human .last-btn{
+    }
+
+    .human {
+        width: 80%;
+    }
+
+    .human .last-btn {
         display: flex;
         justify-content: center;
     }
-     .info .text-bars{
-         width: 100%;
-     }
+
+    .info .text-bars {
+        width: 100%;
+    }
+
+    .text1 {
+        width: 100%;
+        text-align: center;
+    }
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        width: 100%;
+    }
+    .sponsors{
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .extra{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .footer{
+        margin: 100px auto;
+    }
 }
