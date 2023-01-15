@@ -25,7 +25,10 @@
     font-size: 35px;
     margin-bottom: 10px;
 }
-
+.orange{
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
 .header-des {
     color: var(--secondary-color);
     font-weight: 400;
@@ -149,7 +152,7 @@ ul {
     text-align: center;
 }
 .box-info:hover{
-    background-color: rgb(121, 182, 243);
+    background: rgb(121, 182, 243);
     border-radius: 50%;
     transform: rotate(360deg);
     font-weight: 700;
@@ -212,7 +215,9 @@ ul {
     .container {
         padding: 0;
     }
-
+    .orange{
+        border: none;
+    }
     nav {
         flex-direction: column;
         padding: 10px;
