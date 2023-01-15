@@ -13,7 +13,6 @@
 .container{
     padding: 25px 120px;
     width: 100%;
-    max-width: 1460px;
 }
 
 .first{
@@ -194,7 +193,6 @@ ul {
 }
 .extra img:hover{
     width: 280px;
-    max-width: 1200px;
     height: 200px;
     border-radius: 8px;
     transform:rotate(360deg);
