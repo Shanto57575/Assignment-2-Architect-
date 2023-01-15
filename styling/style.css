@@ -116,13 +116,15 @@ ul {
 }
 
 .btn1 {
-    width: 100px;
-    height: 64px;
+    position: relative;
+    width: 150px;
+    height: 84px;
     background: #FF900E;
     border-radius: 8px;
     color: white;
     border: none;
-    display: block;
+    bottom: 60px;
+    right: 50px;
 }
 
 /* Text and bordered button */
@@ -148,9 +150,9 @@ ul {
     text-align: center;
 }
 .box-info:hover{
-    background-color: rgb(219, 196, 243);
+    background-color: rgb(121, 182, 243);
     border-radius: 50%;
-    transform:rotate(360deg);
+    transform: rotate(360deg);
     font-weight: 700;
     font-size: 30px;
 }
@@ -164,7 +166,13 @@ ul {
     margin-top: 30px;
     filter: grayscale(1);
 }
-
+.sponsor img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 130px;
+}
 /* Extra Section */
 .extra-sections{
     margin: 50px 0;
@@ -211,7 +219,16 @@ ul {
         flex-direction: column;
         padding: 10px;
     }
-
+    ul {
+        flex-direction: column;
+    }
+    ul li{
+        box-shadow: 5px 5px 10px gray;
+        height: 30px;
+        width: 100px;
+        text-align: center;
+        /* align-items: center; */
+    }
     .banner {
         width: 100%;
         padding: 10px 20px;
@@ -234,6 +251,7 @@ ul {
     }
 
     /* ............................ */
+    
     .third {
         flex-direction: column;
     }
@@ -270,8 +288,21 @@ ul {
     }
     .sponsors{
         margin: 0 auto;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         gap: 30px;
+        /* width: 100%; */
+        flex-direction: column;
+    }
+    .btn1 {
+        bottom: 50px;
+        left: 70px;
+    }
+    .sponsors img{
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        text-align: center;
     }
     .extra{
         width: 100%;
